@@ -58,12 +58,6 @@ public class AssimpActivity extends Activity{
 
     static public ListView mErrTipListview = null;
 
-    //滚动的文字
-    private Handler mEventHandler;
-//    private AutoTextView mAutoTextView;
-    private int mLoopCount = 0;
-    private ArrayList<String> mStringArray;
-
     private native void CreateObjectNative(AssetManager assetManager, String pathToInternalDir);
     private native void DeleteObjectNative();
 
