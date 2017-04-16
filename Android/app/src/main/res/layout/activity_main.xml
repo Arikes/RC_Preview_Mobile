@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直角转弯"></Button>
+    <Button
+        android:id="@+id/btnTest2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="侧方停车"
+        />
+    <Button
+        android:id="@+id/btnTest3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="倒车入库"
+        />
+    <Button
+        android:id="@+id/btnTest4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弯道驾驶"
+        />
+    <Button
+        android:id="@+id/btnTest5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="半坡起步"
+        />B
+
+</LinearLayout>

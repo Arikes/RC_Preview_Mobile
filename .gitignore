@@ -1,0 +1,6 @@
+*.class
+/android/bin/
+/android/gen/
+*.ap
+*.apk
+

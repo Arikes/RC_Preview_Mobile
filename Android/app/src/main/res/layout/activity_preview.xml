@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:auto3d="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:id="@+id/gl_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvErrTip"
+                android:alpha="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#ff0000">
+            </ListView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnLookDown"
+                android:background="#99999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:text="俯视">
+            </Button>
+            <Button
+                android:id="@+id/btnFollow"
+                android:background="#99999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:text="环绕">
+            </Button>
+
+            <Button
+                android:id="@+id/btnFreedom"
+                android:background="#99999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:text="漫游">
+            </Button>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout android:id="@+id/myDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+</RelativeLayout>
