@@ -112,10 +112,10 @@ public class MyGLSurfaceView extends GLSurfaceView {
                     float dy = y - mPreviousY;
                     float dx = x - mPreviousX;
 
-                    rotateX = dx * TOUCH_SCALE_FACTOR;//设置沿x轴旋转角度
+                    rotateX = dx * TOUCH_SCALE_FACTOR;
                     rotateY = dy * TOUCH_SCALE_FACTOR;
 
-                    rotateCameraAround(0, rotateX, 0);
+                    rotateCameraAround(rotateX, rotateY);
 
                 }else if (mOperaMode == 2) {
                     float dy = y - mPreviousY;
@@ -156,27 +156,19 @@ public class MyGLSurfaceView extends GLSurfaceView {
         Vector3f up = cam.cross(target);
         MatrixState.setCamera(cameraX, cameraY, cameraZ, targetX, targetY, targetZ, up.x, up.y, up.z);
     }
-
-    private void rotateCameraAround(float rotateX, float rotateY, float rotateZ){
+    static float tt = 10;
+    static float ty = 0;
+    static float tx = 0;
+    private void rotateCameraAround(float rotateX, float rotateY){
         PointNode pathData = AssimpActivity.pathData.Points.get(0);
 
-        float[] matrix = MatrixState.getOriginalMatrix();
-       // float[] matrixCamera = MatrixState.getCaMatrix();
-        float[] matrixCur  = MatrixState.getMMatrix();
 
-        Matrix.rotateM(matrix, 0, rotateY, 0, 1 ,0);
-//        Matrix.translateM(matrix, 0, mCameraX, 0, 0);
-        //Matrix.rotateM(matrix, 0, rotateY, mCameraX, 1f, mCameraZ);
-
-        float[] matrixCameraResult = new float[16];
-        Matrix.multiplyMM(matrixCameraResult, 0, matrixCur, 0, matrix, 0);
-
-        MatrixState.setMMMatrix(matrixCameraResult);
-       //MatrixState.translate(pathData.x / 100, 0.0f, pathData.y / 100);
-        //Matrix.multiplyMM(matrixCameraResult, 0, matrixCamera, 0, matrixCur, 0);
-        //Matrix.multiplyMM(matrixCameraResult, 0, matrixCameraResult, 0, matrix, 0);
-        //MatrixState.setCamera(mCameraX, mCameraHeight, mCameraZ, pathData.x, pathData.y, pathData.z, 0f, 0.0f, 1.0f);
-        //MatrixState.setCaMatrix(matrixCameraResult);
+        ty+=rotateY*0.01;
+        tx+=rotateX*0.01;
+        MatrixState.setCamera(
+                tx,ty,tt,
+                pathData.x/100,0,pathData.z/100,
+                0,1,0);
     }
 
     private class SceneRenderer implements GLSurfaceView.Renderer {
@@ -253,7 +245,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
                 AssimpActivity.mPanelView.SetAngleFangXiangPan(rotateAngle);
                 AssimpActivity.mPanelView.setYouMenValue(pathData.Accelerat);
-                AssimpActivity.mPanelView.setShaCheValue(1-pathData.Brake);
+                AssimpActivity.mPanelView.setShaCheValue(pathData.Brake);
                 AssimpActivity.mPanelView.setLiHeValue(pathData.Clutch);
                 AssimpActivity.mPanelView.UpdateView();
 

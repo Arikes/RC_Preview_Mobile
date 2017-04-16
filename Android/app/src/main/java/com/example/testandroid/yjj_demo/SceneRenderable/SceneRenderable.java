@@ -289,19 +289,19 @@ public class SceneRenderable implements Renderable {
             mlinePointList.add(curNode.Points.get(7).y/100);
 
             mlineYellowPointList.add(curNode.Points.get(7).x/100);
-            mlineYellowPointList.add(0.01f);
+            mlineYellowPointList.add(0.0f);
             mlineYellowPointList.add(curNode.Points.get(7).y/100);
 
             mlineYellowPointList.add(curNode.Points.get(0).x/100);
-            mlineYellowPointList.add(0.01f);
+            mlineYellowPointList.add(0.0f);
             mlineYellowPointList.add(curNode.Points.get(0).y/100);
 
             mlineYellowPointList.add(curNode.Points.get(1).x/100);
-            mlineYellowPointList.add(0.01f);
+            mlineYellowPointList.add(0.0f);
             mlineYellowPointList.add(curNode.Points.get(1).y/100);
 
             mlineYellowPointList.add(curNode.Points.get(2).x/100);
-            mlineYellowPointList.add(0.01f);
+            mlineYellowPointList.add(0.0f);
             mlineYellowPointList.add(curNode.Points.get(2).y/100);
         }
 
@@ -374,11 +374,11 @@ public class SceneRenderable implements Renderable {
             mlinePointList.add(curNode.Points.get(0).y/100);
 
             mlineYellowPointList.add(curNode.Points.get(6).x/100);
-            mlineYellowPointList.add(0.01f);
+            mlineYellowPointList.add(0.0f);
             mlineYellowPointList.add(curNode.Points.get(6).y/100);
 
             mlineYellowPointList.add(curNode.Points.get(3).x/100);
-            mlineYellowPointList.add(0.01f);
+            mlineYellowPointList.add(0.0f);
             mlineYellowPointList.add(curNode.Points.get(3).y/100);
         }
 

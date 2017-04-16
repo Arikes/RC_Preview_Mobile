@@ -58,6 +58,10 @@ public class AssimpActivity extends Activity{
 
     static public ListView mErrTipListview = null;
 
+//    private Handler mEventHandler;
+//    private int mLoopCount = 0;
+//    private ArrayList<String> mStringArray;
+
     private native void CreateObjectNative(AssetManager assetManager, String pathToInternalDir);
     private native void DeleteObjectNative();
 

@@ -176,16 +176,6 @@ public class MatrixState {
 		return mProjMatrix;
     }
 
-    public static float[] getCaMatrix()
-    {
-		return mVMatrix;
-    }
-
-    public static void  setCaMatrix(float[] caMatrix)
-    {
-        mVMatrix = caMatrix;
-    }
-
     public static void setMMMatrix(float[] matrix){
         currMatrix = matrix;
     }
