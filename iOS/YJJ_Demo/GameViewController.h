@@ -11,8 +11,8 @@
 #import "pointModel.h"
 #import "mapDataModel.h"
 #import "DataPool.h"
-
-@interface GameViewController : UIViewController
+#import <SpriteKit/SpriteKit.h>
+@interface GameViewController : UIViewController<SCNSceneRendererDelegate>
 {
     DataPool *dataPool;
     SCNNode *carnode;
