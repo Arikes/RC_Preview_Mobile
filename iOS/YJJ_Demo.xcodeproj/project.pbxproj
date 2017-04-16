@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD693FEB1E98F57400B18C06 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD693FE91E98E10B00B18C06 /* AssetsLibrary.framework */; };
+		CD693FED1E98F57900B18C06 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD693FEC1E98F57900B18C06 /* SceneKit.framework */; };
+		CD693FEF1E98F5DF00B18C06 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD693FEE1E98F5DF00B18C06 /* ModelIO.framework */; };
+		CD69D2941E99374300735538 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CD69D2931E99374300735538 /* art.scnassets */; };
+		CD7F74691E98807F0023562C /* cdNodeObjsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F745E1E98807F0023562C /* cdNodeObjsModel.m */; };
+		CD7F746A1E98807F0023562C /* ppNodeObjsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F74601E98807F0023562C /* ppNodeObjsModel.m */; };
+		CD7F746B1E98807F0023562C /* qtNodeObjsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F74621E98807F0023562C /* qtNodeObjsModel.m */; };
+		CD7F746C1E98807F0023562C /* rpNodeObjsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F74641E98807F0023562C /* rpNodeObjsModel.m */; };
+		CD7F746D1E98807F0023562C /* spNodeObjsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F74661E98807F0023562C /* spNodeObjsModel.m */; };
+		CD7F746E1E98807F0023562C /* spsubNodeObjsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F74681E98807F0023562C /* spsubNodeObjsModel.m */; };
+		CD7F74711E9880AD0023562C /* pointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F74701E9880AD0023562C /* pointModel.m */; };
+		CD8099A81E9883980063F3EE /* mapDataModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD8099A71E9883980063F3EE /* mapDataModel.mm */; };
+		CD88827C1E9E371F0069B694 /* pathDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD88827B1E9E371F0069B694 /* pathDataModel.m */; };
+		CD8AB0481E97943800FD707E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AB0471E97943800FD707E /* main.m */; };
+		CD8AB04B1E97943800FD707E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AB04A1E97943800FD707E /* AppDelegate.m */; };
+		CD8AB04D1E97943800FD707E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8AB04C1E97943800FD707E /* art.scnassets */; };
+		CD8AB0501E97943800FD707E /* GameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD8AB04F1E97943800FD707E /* GameViewController.mm */; };
+		CD8AB0531E97943800FD707E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AB0511E97943800FD707E /* Main.storyboard */; };
+		CD8AB0551E97943800FD707E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8AB0541E97943800FD707E /* Assets.xcassets */; };
+		CD8AB0581E97943800FD707E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AB0561E97943800FD707E /* LaunchScreen.storyboard */; };
+		CD8AB0631E97943800FD707E /* YJJ_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AB0621E97943800FD707E /* YJJ_DemoTests.m */; };
+		CD8AB06E1E97943800FD707E /* YJJ_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AB06D1E97943800FD707E /* YJJ_DemoUITests.m */; };
+		CD8CA46A1E98AD4F00BD80F6 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8CA4661E98AD4F00BD80F6 /* NSObject+YYModel.m */; };
+		CD8CA46B1E98AD4F00BD80F6 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8CA4681E98AD4F00BD80F6 /* YYClassInfo.m */; };
+		CD8CA4701E98AF8D00BD80F6 /* mapData.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8CA46D1E98AF8D00BD80F6 /* mapData.json */; };
+		CD8CA4711E98AF8D00BD80F6 /* pathData.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8CA46F1E98AF8D00BD80F6 /* pathData.json */; };
+		CD8CA4741E98B49400BD80F6 /* DataPool.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD8CA4731E98B49400BD80F6 /* DataPool.mm */; };
+		CDAFE7C51E9F69D900FC1989 /* rightDk.json in Resources */ = {isa = PBXBuildFile; fileRef = CDAFE7C41E9F69D900FC1989 /* rightDk.json */; };
+		CDE6E9AC1EA10A78005C11A9 /* CarTraceData.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDE6E9AB1EA10A78005C11A9 /* CarTraceData.mm */; };
+		CDE6E9AE1EA1C39F005C11A9 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6E9AD1EA1C39F005C11A9 /* SpriteKit.framework */; };
+		CDE6E9B01EA1CE5C005C11A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6E9AF1EA1CE5C005C11A9 /* QuartzCore.framework */; };
+		CDE6E9B31EA1CE97005C11A9 /* Line2d.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE6E9B21EA1CE97005C11A9 /* Line2d.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD8AB05F1E97943800FD707E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8AB03B1E97943700FD707E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8AB0421E97943800FD707E;
+			remoteInfo = YJJ_Demo;
+		};
+		CD8AB06A1E97943800FD707E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8AB03B1E97943700FD707E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8AB0421E97943800FD707E;
+			remoteInfo = YJJ_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD693FE91E98E10B00B18C06 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CD693FEC1E98F57900B18C06 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		CD693FEE1E98F5DF00B18C06 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		CD69D2931E99374300735538 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = YJJ_Demo/art.scnassets; sourceTree = "<group>"; };
+		CD7F745D1E98807F0023562C /* cdNodeObjsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cdNodeObjsModel.h; path = DataModel/cdNodeObjsModel.h; sourceTree = "<group>"; };
+		CD7F745E1E98807F0023562C /* cdNodeObjsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cdNodeObjsModel.m; path = DataModel/cdNodeObjsModel.m; sourceTree = "<group>"; };
+		CD7F745F1E98807F0023562C /* ppNodeObjsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ppNodeObjsModel.h; path = DataModel/ppNodeObjsModel.h; sourceTree = "<group>"; };
+		CD7F74601E98807F0023562C /* ppNodeObjsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ppNodeObjsModel.m; path = DataModel/ppNodeObjsModel.m; sourceTree = "<group>"; };
+		CD7F74611E98807F0023562C /* qtNodeObjsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = qtNodeObjsModel.h; path = DataModel/qtNodeObjsModel.h; sourceTree = "<group>"; };
+		CD7F74621E98807F0023562C /* qtNodeObjsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = qtNodeObjsModel.m; path = DataModel/qtNodeObjsModel.m; sourceTree = "<group>"; };
+		CD7F74631E98807F0023562C /* rpNodeObjsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rpNodeObjsModel.h; path = DataModel/rpNodeObjsModel.h; sourceTree = "<group>"; };
+		CD7F74641E98807F0023562C /* rpNodeObjsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = rpNodeObjsModel.m; path = DataModel/rpNodeObjsModel.m; sourceTree = "<group>"; };
+		CD7F74651E98807F0023562C /* spNodeObjsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spNodeObjsModel.h; path = DataModel/spNodeObjsModel.h; sourceTree = "<group>"; };
+		CD7F74661E98807F0023562C /* spNodeObjsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = spNodeObjsModel.m; path = DataModel/spNodeObjsModel.m; sourceTree = "<group>"; };
+		CD7F74671E98807F0023562C /* spsubNodeObjsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spsubNodeObjsModel.h; path = DataModel/spsubNodeObjsModel.h; sourceTree = "<group>"; };
+		CD7F74681E98807F0023562C /* spsubNodeObjsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = spsubNodeObjsModel.m; path = DataModel/spsubNodeObjsModel.m; sourceTree = "<group>"; };
+		CD7F746F1E9880AD0023562C /* pointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pointModel.h; path = DataModel/pointModel.h; sourceTree = "<group>"; };
+		CD7F74701E9880AD0023562C /* pointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pointModel.m; path = DataModel/pointModel.m; sourceTree = "<group>"; };
+		CD8099A61E9883980063F3EE /* mapDataModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; name = mapDataModel.h; path = DataModel/mapDataModel.h; sourceTree = "<group>"; };
+		CD8099A71E9883980063F3EE /* mapDataModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = mapDataModel.mm; path = DataModel/mapDataModel.mm; sourceTree = "<group>"; };
+		CD88827A1E9E371F0069B694 /* pathDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pathDataModel.h; path = DataModel/pathDataModel.h; sourceTree = "<group>"; };
+		CD88827B1E9E371F0069B694 /* pathDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pathDataModel.m; path = DataModel/pathDataModel.m; sourceTree = "<group>"; };
+		CD8AB0431E97943800FD707E /* YJJ_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJJ_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8AB0471E97943800FD707E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD8AB0491E97943800FD707E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD8AB04A1E97943800FD707E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD8AB04C1E97943800FD707E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		CD8AB04E1E97943800FD707E /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		CD8AB04F1E97943800FD707E /* GameViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GameViewController.mm; sourceTree = "<group>"; };
+		CD8AB0521E97943800FD707E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD8AB0541E97943800FD707E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD8AB0571E97943800FD707E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD8AB0591E97943800FD707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8AB05E1E97943800FD707E /* YJJ_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJJ_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8AB0621E97943800FD707E /* YJJ_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJJ_DemoTests.m; sourceTree = "<group>"; };
+		CD8AB0641E97943800FD707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8AB0691E97943800FD707E /* YJJ_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJJ_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8AB06D1E97943800FD707E /* YJJ_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJJ_DemoUITests.m; sourceTree = "<group>"; };
+		CD8AB06F1E97943800FD707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8CA4651E98AD4F00BD80F6 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		CD8CA4661E98AD4F00BD80F6 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		CD8CA4671E98AD4F00BD80F6 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		CD8CA4681E98AD4F00BD80F6 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		CD8CA4691E98AD4F00BD80F6 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		CD8CA46D1E98AF8D00BD80F6 /* mapData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapData.json; sourceTree = "<group>"; };
+		CD8CA46F1E98AF8D00BD80F6 /* pathData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pathData.json; sourceTree = "<group>"; };
+		CD8CA4721E98B49400BD80F6 /* DataPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPool.h; sourceTree = "<group>"; };
+		CD8CA4731E98B49400BD80F6 /* DataPool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataPool.mm; sourceTree = "<group>"; };
+		CDAFE7C41E9F69D900FC1989 /* rightDk.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = rightDk.json; sourceTree = "<group>"; };
+		CDE6E9AA1EA10A78005C11A9 /* CarTraceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTraceData.h; sourceTree = "<group>"; };
+		CDE6E9AB1EA10A78005C11A9 /* CarTraceData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CarTraceData.mm; sourceTree = "<group>"; };
+		CDE6E9AD1EA1C39F005C11A9 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CDE6E9AF1EA1CE5C005C11A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CDE6E9B11EA1CE97005C11A9 /* Line2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line2d.h; sourceTree = "<group>"; };
+		CDE6E9B21EA1CE97005C11A9 /* Line2d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line2d.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8AB0401E97943800FD707E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE6E9B01EA1CE5C005C11A9 /* QuartzCore.framework in Frameworks */,
+				CDE6E9AE1EA1C39F005C11A9 /* SpriteKit.framework in Frameworks */,
+				CD693FEF1E98F5DF00B18C06 /* ModelIO.framework in Frameworks */,
+				CD693FED1E98F57900B18C06 /* SceneKit.framework in Frameworks */,
+				CD693FEB1E98F57400B18C06 /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AB05B1E97943800FD707E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AB0661E97943800FD707E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD7F745C1E98804C0023562C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD88827A1E9E371F0069B694 /* pathDataModel.h */,
+				CD88827B1E9E371F0069B694 /* pathDataModel.m */,
+				CD8CA4641E98AD4F00BD80F6 /* YYModel */,
+				CD8099A61E9883980063F3EE /* mapDataModel.h */,
+				CD8099A71E9883980063F3EE /* mapDataModel.mm */,
+				CD7F746F1E9880AD0023562C /* pointModel.h */,
+				CD7F74701E9880AD0023562C /* pointModel.m */,
+				CD7F745D1E98807F0023562C /* cdNodeObjsModel.h */,
+				CD7F745E1E98807F0023562C /* cdNodeObjsModel.m */,
+				CD7F745F1E98807F0023562C /* ppNodeObjsModel.h */,
+				CD7F74601E98807F0023562C /* ppNodeObjsModel.m */,
+				CD7F74611E98807F0023562C /* qtNodeObjsModel.h */,
+				CD7F74621E98807F0023562C /* qtNodeObjsModel.m */,
+				CD7F74631E98807F0023562C /* rpNodeObjsModel.h */,
+				CD7F74641E98807F0023562C /* rpNodeObjsModel.m */,
+				CD7F74651E98807F0023562C /* spNodeObjsModel.h */,
+				CD7F74661E98807F0023562C /* spNodeObjsModel.m */,
+				CD7F74671E98807F0023562C /* spsubNodeObjsModel.h */,
+				CD7F74681E98807F0023562C /* spsubNodeObjsModel.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		CD8AB03A1E97943700FD707E = {
+			isa = PBXGroup;
+			children = (
+				CDE6E9AF1EA1CE5C005C11A9 /* QuartzCore.framework */,
+				CDE6E9AD1EA1C39F005C11A9 /* SpriteKit.framework */,
+				CD693FEE1E98F5DF00B18C06 /* ModelIO.framework */,
+				CD693FEC1E98F57900B18C06 /* SceneKit.framework */,
+				CD693FE91E98E10B00B18C06 /* AssetsLibrary.framework */,
+				CD8CA46C1E98AF6B00BD80F6 /* Assets */,
+				CD7F745C1E98804C0023562C /* DataModel */,
+				CD8AB0451E97943800FD707E /* YJJ_Demo */,
+				CD8AB0611E97943800FD707E /* YJJ_DemoTests */,
+				CD8AB06C1E97943800FD707E /* YJJ_DemoUITests */,
+				CD8AB0441E97943800FD707E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8AB0441E97943800FD707E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AB0431E97943800FD707E /* YJJ_Demo.app */,
+				CD8AB05E1E97943800FD707E /* YJJ_DemoTests.xctest */,
+				CD8AB0691E97943800FD707E /* YJJ_DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8AB0451E97943800FD707E /* YJJ_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AB0491E97943800FD707E /* AppDelegate.h */,
+				CD8AB04A1E97943800FD707E /* AppDelegate.m */,
+				CD8AB04C1E97943800FD707E /* art.scnassets */,
+				CD8AB04E1E97943800FD707E /* GameViewController.h */,
+				CD8AB04F1E97943800FD707E /* GameViewController.mm */,
+				CD8AB0511E97943800FD707E /* Main.storyboard */,
+				CD8AB0541E97943800FD707E /* Assets.xcassets */,
+				CD8AB0561E97943800FD707E /* LaunchScreen.storyboard */,
+				CD8AB0591E97943800FD707E /* Info.plist */,
+				CD8AB0461E97943800FD707E /* Supporting Files */,
+				CD8CA4721E98B49400BD80F6 /* DataPool.h */,
+				CD8CA4731E98B49400BD80F6 /* DataPool.mm */,
+				CDE6E9AA1EA10A78005C11A9 /* CarTraceData.h */,
+				CDE6E9AB1EA10A78005C11A9 /* CarTraceData.mm */,
+				CDE6E9B11EA1CE97005C11A9 /* Line2d.h */,
+				CDE6E9B21EA1CE97005C11A9 /* Line2d.m */,
+			);
+			path = YJJ_Demo;
+			sourceTree = "<group>";
+		};
+		CD8AB0461E97943800FD707E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AB0471E97943800FD707E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD8AB0611E97943800FD707E /* YJJ_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AB0621E97943800FD707E /* YJJ_DemoTests.m */,
+				CD8AB0641E97943800FD707E /* Info.plist */,
+			);
+			path = YJJ_DemoTests;
+			sourceTree = "<group>";
+		};
+		CD8AB06C1E97943800FD707E /* YJJ_DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AB06D1E97943800FD707E /* YJJ_DemoUITests.m */,
+				CD8AB06F1E97943800FD707E /* Info.plist */,
+			);
+			path = YJJ_DemoUITests;
+			sourceTree = "<group>";
+		};
+		CD8CA4641E98AD4F00BD80F6 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD8CA4651E98AD4F00BD80F6 /* NSObject+YYModel.h */,
+				CD8CA4661E98AD4F00BD80F6 /* NSObject+YYModel.m */,
+				CD8CA4671E98AD4F00BD80F6 /* YYClassInfo.h */,
+				CD8CA4681E98AD4F00BD80F6 /* YYClassInfo.m */,
+				CD8CA4691E98AD4F00BD80F6 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		CD8CA46C1E98AF6B00BD80F6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CD69D2931E99374300735538 /* art.scnassets */,
+				CD8CA46D1E98AF8D00BD80F6 /* mapData.json */,
+				CD8CA46E1E98AF8D00BD80F6 /* paths */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		CD8CA46E1E98AF8D00BD80F6 /* paths */ = {
+			isa = PBXGroup;
+			children = (
+				CD8CA46F1E98AF8D00BD80F6 /* pathData.json */,
+				CDAFE7C41E9F69D900FC1989 /* rightDk.json */,
+			);
+			path = paths;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8AB0421E97943800FD707E /* YJJ_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8AB0721E97943800FD707E /* Build configuration list for PBXNativeTarget "YJJ_Demo" */;
+			buildPhases = (
+				CD8AB03F1E97943800FD707E /* Sources */,
+				CD8AB0401E97943800FD707E /* Frameworks */,
+				CD8AB0411E97943800FD707E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJJ_Demo;
+			productName = YJJ_Demo;
+			productReference = CD8AB0431E97943800FD707E /* YJJ_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD8AB05D1E97943800FD707E /* YJJ_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8AB0751E97943800FD707E /* Build configuration list for PBXNativeTarget "YJJ_DemoTests" */;
+			buildPhases = (
+				CD8AB05A1E97943800FD707E /* Sources */,
+				CD8AB05B1E97943800FD707E /* Frameworks */,
+				CD8AB05C1E97943800FD707E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD8AB0601E97943800FD707E /* PBXTargetDependency */,
+			);
+			name = YJJ_DemoTests;
+			productName = YJJ_DemoTests;
+			productReference = CD8AB05E1E97943800FD707E /* YJJ_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD8AB0681E97943800FD707E /* YJJ_DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8AB0781E97943800FD707E /* Build configuration list for PBXNativeTarget "YJJ_DemoUITests" */;
+			buildPhases = (
+				CD8AB0651E97943800FD707E /* Sources */,
+				CD8AB0661E97943800FD707E /* Frameworks */,
+				CD8AB0671E97943800FD707E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD8AB06B1E97943800FD707E /* PBXTargetDependency */,
+			);
+			name = YJJ_DemoUITests;
+			productName = YJJ_DemoUITests;
+			productReference = CD8AB0691E97943800FD707E /* YJJ_DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD8AB03B1E97943700FD707E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = YJJ_lxh;
+				TargetAttributes = {
+					CD8AB0421E97943800FD707E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					CD8AB05D1E97943800FD707E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CD8AB0421E97943800FD707E;
+					};
+					CD8AB0681E97943800FD707E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CD8AB0421E97943800FD707E;
+					};
+				};
+			};
+			buildConfigurationList = CD8AB03E1E97943700FD707E /* Build configuration list for PBXProject "YJJ_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD8AB03A1E97943700FD707E;
+			productRefGroup = CD8AB0441E97943800FD707E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8AB0421E97943800FD707E /* YJJ_Demo */,
+				CD8AB05D1E97943800FD707E /* YJJ_DemoTests */,
+				CD8AB0681E97943800FD707E /* YJJ_DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8AB0411E97943800FD707E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AB04D1E97943800FD707E /* art.scnassets in Resources */,
+				CD8AB0581E97943800FD707E /* LaunchScreen.storyboard in Resources */,
+				CD8CA4701E98AF8D00BD80F6 /* mapData.json in Resources */,
+				CD69D2941E99374300735538 /* art.scnassets in Resources */,
+				CDAFE7C51E9F69D900FC1989 /* rightDk.json in Resources */,
+				CD8AB0551E97943800FD707E /* Assets.xcassets in Resources */,
+				CD8CA4711E98AF8D00BD80F6 /* pathData.json in Resources */,
+				CD8AB0531E97943800FD707E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AB05C1E97943800FD707E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AB0671E97943800FD707E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD8AB03F1E97943800FD707E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7F746B1E98807F0023562C /* qtNodeObjsModel.m in Sources */,
+				CDE6E9B31EA1CE97005C11A9 /* Line2d.m in Sources */,
+				CD7F746C1E98807F0023562C /* rpNodeObjsModel.m in Sources */,
+				CD7F74711E9880AD0023562C /* pointModel.m in Sources */,
+				CD8CA46A1E98AD4F00BD80F6 /* NSObject+YYModel.m in Sources */,
+				CD7F74691E98807F0023562C /* cdNodeObjsModel.m in Sources */,
+				CD8AB04B1E97943800FD707E /* AppDelegate.m in Sources */,
+				CD7F746D1E98807F0023562C /* spNodeObjsModel.m in Sources */,
+				CD7F746E1E98807F0023562C /* spsubNodeObjsModel.m in Sources */,
+				CDE6E9AC1EA10A78005C11A9 /* CarTraceData.mm in Sources */,
+				CD88827C1E9E371F0069B694 /* pathDataModel.m in Sources */,
+				CD8AB0501E97943800FD707E /* GameViewController.mm in Sources */,
+				CD8CA46B1E98AD4F00BD80F6 /* YYClassInfo.m in Sources */,
+				CD8AB0481E97943800FD707E /* main.m in Sources */,
+				CD8099A81E9883980063F3EE /* mapDataModel.mm in Sources */,
+				CD7F746A1E98807F0023562C /* ppNodeObjsModel.m in Sources */,
+				CD8CA4741E98B49400BD80F6 /* DataPool.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AB05A1E97943800FD707E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AB0631E97943800FD707E /* YJJ_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AB0651E97943800FD707E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AB06E1E97943800FD707E /* YJJ_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD8AB0601E97943800FD707E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8AB0421E97943800FD707E /* YJJ_Demo */;
+			targetProxy = CD8AB05F1E97943800FD707E /* PBXContainerItemProxy */;
+		};
+		CD8AB06B1E97943800FD707E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8AB0421E97943800FD707E /* YJJ_Demo */;
+			targetProxy = CD8AB06A1E97943800FD707E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD8AB0511E97943800FD707E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8AB0521E97943800FD707E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD8AB0561E97943800FD707E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8AB0571E97943800FD707E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8AB0701E97943800FD707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD8AB0711E97943800FD707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8AB0731E97943800FD707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YJJ_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD8AB0741E97943800FD707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YJJ_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD8AB0761E97943800FD707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = YJJ_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJJ_Demo.app/YJJ_Demo";
+			};
+			name = Debug;
+		};
+		CD8AB0771E97943800FD707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YJJ_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJJ_Demo.app/YJJ_Demo";
+			};
+			name = Release;
+		};
+		CD8AB0791E97943800FD707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = YJJ_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YJJ_Demo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CD8AB07A1E97943800FD707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YJJ_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YJJ_Demo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD8AB03E1E97943700FD707E /* Build configuration list for PBXProject "YJJ_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8AB0701E97943800FD707E /* Debug */,
+				CD8AB0711E97943800FD707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8AB0721E97943800FD707E /* Build configuration list for PBXNativeTarget "YJJ_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8AB0731E97943800FD707E /* Debug */,
+				CD8AB0741E97943800FD707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8AB0751E97943800FD707E /* Build configuration list for PBXNativeTarget "YJJ_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8AB0761E97943800FD707E /* Debug */,
+				CD8AB0771E97943800FD707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8AB0781E97943800FD707E /* Build configuration list for PBXNativeTarget "YJJ_DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8AB0791E97943800FD707E /* Debug */,
+				CD8AB07A1E97943800FD707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD8AB03B1E97943700FD707E /* Project object */;
+}
