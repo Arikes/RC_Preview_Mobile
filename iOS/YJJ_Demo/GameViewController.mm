@@ -13,7 +13,7 @@
 #import "YYModel.h"
 #import "CarTraceData.h"
 #include <vector>
-
+#import "AAPLOverlayScene.h"
 using namespace std;
 
 //三角形片顶点，索引
@@ -49,13 +49,17 @@ CarTraceData* mCarTraceData;
     self.initData;
     
     self.sceneView = [[SCNView alloc]initWithFrame:self.view.bounds];
+    self.sceneView.observationInfo ;
     self.sceneView.center = self.view.center;
 //    self.sceneView.backgroundColor = [UIColor blackColor];
     self.sceneView.autoenablesDefaultLighting = YES;
-    
+    self.sceneView.overlaySKScene = [[AAPLOverlayScene alloc] initWithSize:self.view.bounds.size];
 //    统计面板
-    self.sceneView.showsStatistics = YES;
+    self.sceneView.showsStatistics = NO;
+    
     [self.view addSubview:self.sceneView];
+    
+//        scnView.overlaySKScene = [[AAPLOverlayScene alloc] initWithSize:scnView.bounds.size];
     
     //三维场景初始化
     self.scene = [SCNScene scene];
@@ -146,6 +150,8 @@ CarTraceData* mCarTraceData;
 //    SCNNode* textNode = [SCNNode nodeWithGeometry: text];
 //    textNode.position = SCNVector3Make(0, 0, 0);
 //    [self.scene.rootNode addChildNode:textNode];
+    
+//    self.scene.overlaySKScene = nullptr;
     
     self.sceneView.scene = self.scene;
     

@@ -34,7 +34,12 @@
 		CD8CA4701E98AF8D00BD80F6 /* mapData.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8CA46D1E98AF8D00BD80F6 /* mapData.json */; };
 		CD8CA4711E98AF8D00BD80F6 /* pathData.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8CA46F1E98AF8D00BD80F6 /* pathData.json */; };
 		CD8CA4741E98B49400BD80F6 /* DataPool.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD8CA4731E98B49400BD80F6 /* DataPool.mm */; };
+		CD9D987A1EA3603200CBB6B6 /* AAPLOverlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D98791EA3603200CBB6B6 /* AAPLOverlayScene.m */; };
+		CD9D987E1EA360EA00CBB6B6 /* needle.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9D987B1EA360EA00CBB6B6 /* needle.png */; };
+		CD9D987F1EA360EA00CBB6B6 /* speedGauge.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9D987C1EA360EA00CBB6B6 /* speedGauge.png */; };
+		CD9D98801EA360EA00CBB6B6 /* video_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9D987D1EA360EA00CBB6B6 /* video_camera.png */; };
 		CDAFE7C51E9F69D900FC1989 /* rightDk.json in Resources */ = {isa = PBXBuildFile; fileRef = CDAFE7C41E9F69D900FC1989 /* rightDk.json */; };
+		CDB0A98D1EA35E1F002758D9 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB0A98C1EA35E1F002758D9 /* GameController.framework */; };
 		CDE6E9AC1EA10A78005C11A9 /* CarTraceData.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDE6E9AB1EA10A78005C11A9 /* CarTraceData.mm */; };
 		CDE6E9AE1EA1C39F005C11A9 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6E9AD1EA1C39F005C11A9 /* SpriteKit.framework */; };
 		CDE6E9B01EA1CE5C005C11A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6E9AF1EA1CE5C005C11A9 /* QuartzCore.framework */; };
@@ -107,7 +112,13 @@
 		CD8CA46F1E98AF8D00BD80F6 /* pathData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pathData.json; sourceTree = "<group>"; };
 		CD8CA4721E98B49400BD80F6 /* DataPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPool.h; sourceTree = "<group>"; };
 		CD8CA4731E98B49400BD80F6 /* DataPool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataPool.mm; sourceTree = "<group>"; };
+		CD9D98781EA3603200CBB6B6 /* AAPLOverlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLOverlayScene.h; sourceTree = "<group>"; };
+		CD9D98791EA3603200CBB6B6 /* AAPLOverlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLOverlayScene.m; sourceTree = "<group>"; };
+		CD9D987B1EA360EA00CBB6B6 /* needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = needle.png; path = resources/needle.png; sourceTree = "<group>"; };
+		CD9D987C1EA360EA00CBB6B6 /* speedGauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speedGauge.png; path = resources/speedGauge.png; sourceTree = "<group>"; };
+		CD9D987D1EA360EA00CBB6B6 /* video_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video_camera.png; path = resources/video_camera.png; sourceTree = "<group>"; };
 		CDAFE7C41E9F69D900FC1989 /* rightDk.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = rightDk.json; sourceTree = "<group>"; };
+		CDB0A98C1EA35E1F002758D9 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		CDE6E9AA1EA10A78005C11A9 /* CarTraceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTraceData.h; sourceTree = "<group>"; };
 		CDE6E9AB1EA10A78005C11A9 /* CarTraceData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CarTraceData.mm; sourceTree = "<group>"; };
 		CDE6E9AD1EA1C39F005C11A9 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
@@ -121,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB0A98D1EA35E1F002758D9 /* GameController.framework in Frameworks */,
 				CDE6E9B01EA1CE5C005C11A9 /* QuartzCore.framework in Frameworks */,
 				CDE6E9AE1EA1C39F005C11A9 /* SpriteKit.framework in Frameworks */,
 				CD693FEF1E98F5DF00B18C06 /* ModelIO.framework in Frameworks */,
@@ -175,6 +187,7 @@
 		CD8AB03A1E97943700FD707E = {
 			isa = PBXGroup;
 			children = (
+				CDB0A98C1EA35E1F002758D9 /* GameController.framework */,
 				CDE6E9AF1EA1CE5C005C11A9 /* QuartzCore.framework */,
 				CDE6E9AD1EA1C39F005C11A9 /* SpriteKit.framework */,
 				CD693FEE1E98F5DF00B18C06 /* ModelIO.framework */,
@@ -218,6 +231,8 @@
 				CDE6E9AB1EA10A78005C11A9 /* CarTraceData.mm */,
 				CDE6E9B11EA1CE97005C11A9 /* Line2d.h */,
 				CDE6E9B21EA1CE97005C11A9 /* Line2d.m */,
+				CD9D98781EA3603200CBB6B6 /* AAPLOverlayScene.h */,
+				CD9D98791EA3603200CBB6B6 /* AAPLOverlayScene.m */,
 			);
 			path = YJJ_Demo;
 			sourceTree = "<group>";
@@ -263,6 +278,9 @@
 		CD8CA46C1E98AF6B00BD80F6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CD9D987B1EA360EA00CBB6B6 /* needle.png */,
+				CD9D987C1EA360EA00CBB6B6 /* speedGauge.png */,
+				CD9D987D1EA360EA00CBB6B6 /* video_camera.png */,
 				CD69D2931E99374300735538 /* art.scnassets */,
 				CD8CA46D1E98AF8D00BD80F6 /* mapData.json */,
 				CD8CA46E1E98AF8D00BD80F6 /* paths */,
@@ -382,10 +400,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9D987E1EA360EA00CBB6B6 /* needle.png in Resources */,
 				CD8AB04D1E97943800FD707E /* art.scnassets in Resources */,
 				CD8AB0581E97943800FD707E /* LaunchScreen.storyboard in Resources */,
 				CD8CA4701E98AF8D00BD80F6 /* mapData.json in Resources */,
 				CD69D2941E99374300735538 /* art.scnassets in Resources */,
+				CD9D987F1EA360EA00CBB6B6 /* speedGauge.png in Resources */,
+				CD9D98801EA360EA00CBB6B6 /* video_camera.png in Resources */,
 				CDAFE7C51E9F69D900FC1989 /* rightDk.json in Resources */,
 				CD8AB0551E97943800FD707E /* Assets.xcassets in Resources */,
 				CD8CA4711E98AF8D00BD80F6 /* pathData.json in Resources */,
@@ -431,6 +452,7 @@
 				CD8099A81E9883980063F3EE /* mapDataModel.mm in Sources */,
 				CD7F746A1E98807F0023562C /* ppNodeObjsModel.m in Sources */,
 				CD8CA4741E98B49400BD80F6 /* DataPool.mm in Sources */,
+				CD9D987A1EA3603200CBB6B6 /* AAPLOverlayScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YJJ_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YJJ_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yjj.YJJ-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
